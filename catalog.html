@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Roboto:500,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <link href="css/style.css" rel="stylesheet">
 <title> Каталог магазина </title>
 </head>   
@@ -11,13 +12,13 @@
 <div class="container">
   <div class="logo"><img src="img/logo.png" width="" height=""></div>
   <ul class="main-menu">
-    <li><a href=""> Студия </a></li>
+    <li><a href="" class="now"> Студия </a></li>
     <li><a href=""> Клиенты </a></li>
     <li><a href=""> Магазин </a></li>
     <li><a href=""> Контакты </a></li>
   </ul>
   <div class="basket">
-    <a href=""> Корзина </a>
+    <a href="" class="basket-item"><span class="icon-basket"></span> Корзина </a>
   </div>
 </div>
 </header> 
@@ -38,25 +39,33 @@
   <div class="filter-navigation">
     <span class="filter-title"> СТОИМОСТЬ: </span> 
     <div class="filter-scroll"></div>
-    <span> ОТ </span><div class="filter-value min"></div><span> ДО </span><div class="filter-value max"></div>
+    <div class="filter-scroll-value"><span> ОТ </span><div class="filter-value min"></div><span> ДО </span><div class="filter-value max"></div></div>
   </div>
   <div class="filter-select">
     <form action="https://htmlacademy.ru" method="post">
       <div class="filter-version">
-      <span class="filter-title"> Сетка </span>
-      <label><input type="radio"> Адаптивная </label>
-      <label><input type="radio"> Фиксированная </label>
-      <label><input type="radio"> Резиновая </label>
+      <span class="filter-title filter-title-margin"> СЕТКА: </span>
+      <input type="radio" id="rd1"> 
+      <label for="rd1"> Адаптивная </label>
+      <input type="radio" id="rd2">  
+      <label for="rd2"> Фиксированная </label>
+      <input type="radio" id="rd3"> 
+      <label for="rd3"> Резиновая  </label>
       </div>
       <div class="features">
       <span class="filter-title"> ОСОБЕННОСТИ: </span>
-      <label><input type="checkbox"> Слайдер </label>
-      <label><input type="checkbox"> Блок преимуществ </label>
-      <label><input type="checkbox"> Новости </label>
-      <label><input type="checkbox"> Галерея </label>
-      <label><input type="checkbox"> Корзина </label>
+      <input type="checkbox" id="ch1"> 
+      <label for="ch1"> Слайдер </label>
+      <input type="checkbox" id="ch2">  
+      <label for="ch2"> Блок преимуществ </label>
+      <input type="checkbox" id="ch3">  
+      <label for="ch3"> Новости </label>
+      <input type="checkbox" id="ch4">  
+      <label for="ch4"> Галерея </label>
+      <input type="checkbox" id="ch5"> 
+      <label for="ch5"> Корзина  </label>
       </div>
-      <button type="submit"> Показать </button>      
+      <div class="filter-button"><button type="submit"> Показать </button></div>     
     </form>     
   </div>
 </div>
@@ -65,37 +74,49 @@
 <div class="portfolio-block">
   <div class="sort">
     <span class="sort-title"> СОРТИРОВАТЬ: </span>
-    <a href=""> ПО ЦЕНЕ </a>
-    <a href=""> ПО ТИПУ </a>
-    <a href=""> ПО ФУНКЦИОНАЛУ </a>
-    <a href="" class="sort-down">  </a>
-    <a href="" class="sort-up">  </a>
+    <a href="" class="type"> ПО ЦЕНЕ </a>
+    <a href="" class="type"> ПО ТИПУ </a>
+    <a href="" class="type"> ПО ФУНКЦИОНАЛУ </a>
+    <a href="" class="icon-down-dir"></a>
+    <a href="" class="icon-up-dir"></a>
   </div>
   <div class="portfolio">
     <div class="portfolio-item">
-      <img src="img/item1.jpg" width="" height="">  
+      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
+      <div class="portfolio-item-img"><img src="img/item1.jpg" width="" height=""></div>
+      <div class="portfolio-item-description pid1"></div>
     </div>
     <div class="portfolio-item">
-      <img src="img/item2.jpg" width="" height="">  
+      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
+      <div class="portfolio-item-img"><img src="img/item2.jpg" width="" height=""></div>
+      <div class="portfolio-item-description pid2"></div>
     </div>
     <div class="portfolio-item">
-      <img src="img/item3.jpg" width="" height="">  
+      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
+      <div class="portfolio-item-img"><img src="img/item3.jpg" width="" height=""></div> 
+      <div class="portfolio-item-description pid3"></div>
     </div>
     <div class="portfolio-item">
-      <img src="img/item4.jpg" width="" height="">  
+      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
+      <div class="portfolio-item-img"><img src="img/item4.jpg" width="" height=""></div> 
+      <div class="portfolio-item-description pid4"></div>
     </div>
     <div class="portfolio-item">
-      <img src="img/item5.jpg" width="" height="">  
+      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
+      <div class="portfolio-item-img"><img src="img/item5.jpg" width="" height=""></div> 
+      <div class="portfolio-item-description pid5"></div>
     </div>
     <div class="portfolio-item">
-      <img src="img/item6.jpg" width="" height="">  
+      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
+      <div class="portfolio-item-img"><img src="img/item6.jpg" width="" height=""></div>  
+      <div class="portfolio-item-description pid6"></div>
     </div>
   </div> 
   <div class="page-number">
-    <a href="" class="page-point"> 1 </a>
+    <a href="" class="page-point current"> 1 </a>
     <a href="" class="page-point"> 2 </a>
     <a href="" class="page-point"> 3 </a>
-    <a href="" class="page-next"> СЛЕДУЩАЯ </a>   
+    <a href="" class="page-next"> СЛЕДУЮЩАЯ </a>   
   </div>
 </div>
 
@@ -126,9 +147,9 @@
 <footer>
 <div class="container">
   <div class="social">
-    <a href="" class="socialicon icon-vk"></a>
-    <a href="" class="socialicon icon-fc"></a>
-    <a href="" class="socialicon icon-insta"></a>
+    <a href="" class="socialicon"><span class="icon-vk"></span></a>
+    <a href="" class="socialicon"><span class="icon-facebook"></span></a>
+    <a href="" class="socialicon"><span class="icon-twitter"></span></a>
   </div>
   <div class="footerpromo">
     <strong class="footerpromo-call"> Давайте дружить, это выгодно! </strong> 
