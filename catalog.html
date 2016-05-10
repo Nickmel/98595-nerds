@@ -10,11 +10,11 @@
 
 <header>
 <div class="container">
-  <div class="logo"><img src="img/logo.png" width="" height=""></div>
+  <div class="logo"><a href="index.html"><img src="img/logo.png" width="" height=""></a></div>
   <ul class="main-menu">
-    <li><a href="" class="now"> Студия </a></li>
+    <li><a href="index.html"> Студия </a></li>
     <li><a href=""> Клиенты </a></li>
-    <li><a href=""> Магазин </a></li>
+    <li><a href="" class="now"> Магазин </a></li>
     <li><a href=""> Контакты </a></li>
   </ul>
   <div class="basket">
@@ -51,7 +51,7 @@
         <div class="toggle max-toggle"></div>
       </div>  
       <div class="price-controls">
-        <span class="from"> от </span> <input class="min-price" type="text" value="0" name="min-price"> <span class="to"> до </span><input class="max-price" type="text" value="15000" name="max-price">
+        <span class="from"> от </span> <input class="min-price" type="text" placeholder="0" name="min-price"> <span class="to"> до </span><input class="max-price" type="text" placeholder="15000" name="max-price">
       </div>
     </div>
   </div>
@@ -59,11 +59,11 @@
     
       <div class="filter-version">
       <span class="filter-title filter-title-margin"> СЕТКА: </span>
-      <input type="radio" id="rd1"> 
+      <input type="radio" id="rd1" name="nameradio"> 
       <label for="rd1"> Адаптивная </label>
-      <input type="radio" id="rd2">  
+      <input type="radio" id="rd2" name="nameradio">  
       <label for="rd2"> Фиксированная </label>
-      <input type="radio" id="rd3"> 
+      <input type="radio" id="rd3" name="nameradio"> 
       <label for="rd3"> Резиновая  </label>
       </div>
       <div class="features">
@@ -87,12 +87,16 @@
     
 <div class="portfolio-block">
   <div class="sort">
+    
     <span class="sort-title"> СОРТИРОВАТЬ: </span>
     <a href="" class="type"> ПО ЦЕНЕ </a>
     <a href="" class="type"> ПО ТИПУ </a>
     <a href="" class="type"> ПО ФУНКЦИОНАЛУ </a>
+    
+    <div class="sort-icons">
     <a href="" class="icon-down-dir"></a>
     <a href="" class="icon-up-dir"></a>
+    </div>
   </div>
   <div class="portfolio">
     <div class="portfolio-item">

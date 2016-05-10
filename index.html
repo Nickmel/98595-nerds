@@ -9,11 +9,11 @@
 <body>
 <header>
 <div class="container">
-  <div class="logo"><img src="img/logo.png" width="" height=""></div>
+  <div class="logo"><a href="#"><img src="img/logo.png" width="" height=""></a></div>
   <ul class="main-menu">
     <li><a href="" class="now"> Студия </a></li>
     <li><a href=""> Клиенты </a></li>
-    <li><a href=""> Магазин </a></li>
+    <li><a href="catalog.html"> Магазин </a></li>
     <li><a href=""> Контакты </a></li>
   </ul>
   <div class="basket">
@@ -22,50 +22,26 @@
 </div>
 </header> 
 
-<!--
-<div class="promo-block">
-<div class="container">
-<div class="promo-info">
-<div class="promo-title"> Долго, дорого, 
-скрупулезно. </div>
-<p class="promo-description"> Математически выверенный дизайн<br> 
-для вашего сайта или мобильного приложения. </p>
-<a href="" class="more"> Узнать больше </a>
-</div>
-<div class="promo-post">
-  <div class="promo-controls"> 
-      
-  </div>
-  <div class="promo-images">
-<img src="img/promo1.png" width="" height="">
-      
-  </div>
-</div>
-      
-</div>    
-</div>
--->
     
 <div class="slider-background">
 <div class="slider">
     
         
   <div class="slider-controls">
-    <i class="active"></i>
-    <i></i>
-    <i></i>
-      
+    <i class="slider-point js-sp1"></i>
+    <i class="slider-point js-sliderpoint2"></i>
+    <i class="slider-point js-sp3"></i>     
   </div>
   <div class="slides">
-    <div class="slide">
+    <div class="slide js-st1 js-st1-open">
       <div class="slide-text">
         <div class="slide-title">Долго, дорого, скрупулезно.</div>
         <p>Математически выверенный дизайн<br>
            для вашего сайта или мобильного приложения.</p>
-        <a class="btn" href="#">Узнать больше</a>
+        <a class="btn testlink" href="#">Узнать больше</a>
       </div>
     </div>
-    <div class="slide">
+    <div class="slide js-slide2 js-slide2-open">
       <div class="slide-text">
         <div class="slide-title">Любите ли вы математику,
 как любим ее мы?</div>
@@ -75,7 +51,7 @@
       </div>
     </div>
     <div class="slide">
-      <div class="slide-text">
+      <div class="slide-text js-st3">
         <div class="slide-title">Только наркотики,
 только хардкор!</div>
         <p> Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов </p>
@@ -156,14 +132,14 @@
     
 <div class="map">
 <div class="container">
-<div clas="map-item">
+<div class="map-item">
   <div class="companyinfo">
     <h2> NЁRDS DESIGN STUDIO </h2>
     <p> 191186, Санкт-Петербург,<br> 
 ул. Б. Конюшенная, д. 19/8<br><br>  
 
 тел. +7 (812) 275-75-75 </p>
-    <a href="" class="writetous"> Напишите нам</a>
+    <a href="#" class="writetous"> Напишите нам</a>
     
   </div>
   <div class="logo-onmap"><img src="img/logo-cut.png"></div>
@@ -171,15 +147,17 @@
  <div class="pop-up">
  <button class="close" typy="button" title="Закрыть"> Закрыть </button>
  <form action="htmlacademy.ru" method="post">
- <div class="name-field"><label>Ваше имя: <br> <input type="text" name="name" class="name" value="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА"></label></div>
- <div class="email-field"><label>Ваш e-mail: <br> <input type="text" name="e-name" class="name" value="ДЛЯ ОТПРАВКИ ОТВЕТА"></label></div>
+ <div class="name-field"><label>Ваше имя: <br> <input type="text" name="name" class="name" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА" rows="30" cols="55"></label></div>
+ <div class="email-field"><label>Ваш e-mail: <br> <input type="text" name="e-name" class="name" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА"></label></div>
  <div class="clearfix"></div>
- <div class="text-field"><label> Текст письма: <br> <input type="text" name="text" class="textarea" value="В СВОБОДНОЙ ФОРМЕ"> </label></div>
- <a class="write-us" href=""> ОТПРАВИТЬ </a>
+     <div class="text-field"><label> Текст письма: <br> <textarea name="message" rows="6" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea></label></div>
+ <button type="submit" class="write-us"> ОТПРАВИТЬ </button>
  </form>
  </div> 
+
 </div> 
-</div>   
+</div> 
+
 </div>
     
 <footer>
@@ -198,8 +176,75 @@
 
       
 </footer>
+ 
+
+
+ <!-- 
+Классы для быстрого примера для Кирилла
+
+
+ .js-sliderpoint2 {
+
+}
+
+.js-slide2 {
+ 
+}
+
+.js-slide2-open {
+    
+}
+
+-->   
+    
+<script>
+  var link = document.querySelector(".writetous"); 
+  var popup = document.querySelector(".pop-up");
+  var close = document.querySelector(".close");
+
+  
+  var ball = document.querySelector(".ball");
+  var takeball = document.querySelector(".take-ball");
+  var link3 = document.querySelector(".js-sliderpoint2");
+    
+  var slide2 = document.querySelector(".js-slide2");
+  
+  
+  
+    
+  
+ 
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.add("pop-up-show");
+    name.focus();
+  });
+    
+    close.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.remove("pop-up-show");
+    name.focus();
+  });
+      
+  link3.addEventListener("click", function(event) {
+    event.preventDefault();
+    slide2.classList.add("js-slide2-open");     
+  });
+    
+ 
+    
+    
+    
     
 
+  
+  
+
+
+      
+
+
+</script>
   
     
 </body>
