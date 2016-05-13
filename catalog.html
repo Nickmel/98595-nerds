@@ -1,186 +1,211 @@
-<!DOCTYPE HTML5>
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<link href='https://fonts.googleapis.com/css?family=Roboto:500,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet">
-<title> Каталог магазина </title>
-</head>   
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+    <title> Каталог магазина </title>
+</head>
+
 <body>
 
-<header>
-<div class="container">
-  <div class="logo"><a href="index.html"><img src="img/logo.png" width="" height=""></a></div>
-  <ul class="main-menu">
-    <li><a href="index.html"> Студия </a></li>
-    <li><a href=""> Клиенты </a></li>
-    <li><a href="" class="now"> Магазин </a></li>
-    <li><a href=""> Контакты </a></li>
-  </ul>
-  <div class="basket">
-    <a href="" class="basket-item"><span class="icon-basket"></span> Корзина </a>
-  </div>
-</div>
-</header> 
-    
-<div class="promo-block">
-<div class="container">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Логотип в меню">
+                </a>
+            </div>
+            <ul class="main-menu">
+                <li><a href="index.html"> Студия </a>
+                </li>
+                <li><a href=""> Клиенты </a>
+                </li>
+                <li><a href="" class="now"> Магазин </a>
+                </li>
+                <li><a href=""> Контакты </a>
+                </li>
+            </ul>
+            <div class="basket">
+                <a href="" class="basket-item"><span class="icon-basket"></span> Корзина </a>
+            </div>
+        </div>
+    </header>
 
-<div class="catalog-promo-title"> Добро пожаловать в магазин 
-готовых макетов </div>
-      
-</div>    
-</div>
-    
-<div class="main">
-<div class="container">
+    <div class="promo-block">
+        <div class="container">
 
-<div class="filter-block">
+            <div class="catalog-promo-title"> Добро пожаловать в магазин готовых макетов </div>
 
-  <div class="filter-navigation">
-    <span class="filter-title"> СТОИМОСТЬ: </span>
-    <!--
-    <div class="filter-scroll"></div>
-    <div class="filter-scroll-value"><span> ОТ </span><div class="filter-value min"></div><span> ДО </span><div class="filter-value max"></div></div>
-    -->
-    <div class="range-filter">
-    <form action="https://htmlacademy.ru" method="post">
-      <div class="range-controls">
-        <div class="scale"><div style="width: 75%;" class="bar"></div></div>
-        <div class="toggle min-toggle"></div>
-        <div class="toggle max-toggle"></div>
-      </div>  
-      <div class="price-controls">
-        <span class="from"> от </span> <input class="min-price" type="text" placeholder="0" name="min-price"> <span class="to"> до </span><input class="max-price" type="text" placeholder="15000" name="max-price">
-      </div>
+        </div>
     </div>
-  </div>
-  <div class="filter-select">
-    
-      <div class="filter-version">
-      <span class="filter-title filter-title-margin"> СЕТКА: </span>
-      <input type="radio" id="rd1" name="nameradio"> 
-      <label for="rd1"> Адаптивная </label>
-      <input type="radio" id="rd2" name="nameradio">  
-      <label for="rd2"> Фиксированная </label>
-      <input type="radio" id="rd3" name="nameradio"> 
-      <label for="rd3"> Резиновая  </label>
-      </div>
-      <div class="features">
-      <span class="filter-title"> ОСОБЕННОСТИ: </span>
-      <input type="checkbox" id="ch1"> 
-      <label for="ch1"> Слайдер </label>
-      <input type="checkbox" id="ch2">  
-      <label for="ch2"> Блок преимуществ </label>
-      <input type="checkbox" id="ch3">  
-      <label for="ch3"> Новости </label>
-      <input type="checkbox" id="ch4">  
-      <label for="ch4"> Галерея </label>
-      <input type="checkbox" id="ch5"> 
-      <label for="ch5"> Корзина  </label>
-      </div>
-      <div class="filter-button"><button type="submit"> Показать </button></div>     
-    </form>     
-  </div>
-</div>
-    
-    
-<div class="portfolio-block">
-  <div class="sort">
-    
-    <span class="sort-title"> СОРТИРОВАТЬ: </span>
-    <a href="" class="type"> ПО ЦЕНЕ </a>
-    <a href="" class="type"> ПО ТИПУ </a>
-    <a href="" class="type"> ПО ФУНКЦИОНАЛУ </a>
-    
-    <div class="sort-icons">
-    <a href="" class="icon-down-dir"></a>
-    <a href="" class="icon-up-dir"></a>
-    </div>
-  </div>
-  <div class="portfolio">
-    <div class="portfolio-item">
-      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
-      <div class="portfolio-item-img"><img src="img/item1.jpg" width="" height=""></div>
-      <div class="portfolio-item-description pid1"></div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
-      <div class="portfolio-item-img"><img src="img/item2.jpg" width="" height=""></div>
-      <div class="portfolio-item-description pid2"></div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
-      <div class="portfolio-item-img"><img src="img/item3.jpg" width="" height=""></div> 
-      <div class="portfolio-item-description pid3"></div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
-      <div class="portfolio-item-img"><img src="img/item4.jpg" width="" height=""></div> 
-      <div class="portfolio-item-description pid4"></div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
-      <div class="portfolio-item-img"><img src="img/item5.jpg" width="" height=""></div> 
-      <div class="portfolio-item-description pid5"></div>
-    </div>
-    <div class="portfolio-item">
-      <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i></div>
-      <div class="portfolio-item-img"><img src="img/item6.jpg" width="" height=""></div>  
-      <div class="portfolio-item-description pid6"></div>
-    </div>
-  </div> 
-  <div class="page-number">
-    <a href="" class="page-point current"> 1 </a>
-    <a href="" class="page-point"> 2 </a>
-    <a href="" class="page-point"> 3 </a>
-    <a href="" class="page-next"> СЛЕДУЮЩАЯ </a>   
-  </div>
-</div>
+
+    <div class="main">
+        <div class="container">
+
+            <div class="filter-block">
+
+                <div class="filter-navigation">
+                    <span class="filter-title"> СТОИМОСТЬ: </span>
+
+                    <div class="range-filter">
+                        <form action="https://htmlacademy.ru" method="post">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div style="width: 75%;" class="bar"></div>
+                                </div>
+                                <div class="toggle min-toggle"></div>
+                                <div class="toggle max-toggle"></div>
+                            </div>
+                            <div class="price-controls">
+                                <span class="from"> от </span>
+                                <input class="min-price" type="text" placeholder="0" name="min-price"> <span class="to"> до </span>
+                                <input class="max-price" type="text" placeholder="15000" name="max-price">
+                            </div>
+                    </div>
+                </div>
+                <div class="filter-select">
+
+                    <div class="filter-version">
+                        <span class="filter-title filter-title-margin"> СЕТКА: </span>
+                        <input type="radio" id="rd1" name="nameradio">
+                        <label for="rd1"> Адаптивная </label>
+                        <input type="radio" id="rd2" name="nameradio">
+                        <label for="rd2"> Фиксированная </label>
+                        <input type="radio" id="rd3" name="nameradio">
+                        <label for="rd3"> Резиновая </label>
+                    </div>
+                    <div class="features">
+                        <span class="filter-title"> ОСОБЕННОСТИ: </span>
+                        <input type="checkbox" id="ch1">
+                        <label for="ch1"> Слайдер </label>
+                        <input type="checkbox" id="ch2">
+                        <label for="ch2"> Блок преимуществ </label>
+                        <input type="checkbox" id="ch3">
+                        <label for="ch3"> Новости </label>
+                        <input type="checkbox" id="ch4">
+                        <label for="ch4"> Галерея </label>
+                        <input type="checkbox" id="ch5">
+                        <label for="ch5"> Корзина </label>
+                    </div>
+                    <div class="filter-button">
+                        <button type="submit"> Показать </button>
+                    </div>
+                    </form>
+                </div>
+            </div>
 
 
-    
-</div>    
-</div>
+            <div class="portfolio-block">
+                <div class="sort">
 
-    
-    
-    
-<div class="map">
-<div class="container">
-  <div class="companyinfo">
-    <h2> NЁRDS DESIGN STUDIO </h2>
-    <p> 191186, Санкт-Петербург,<br> 
-ул. Б. Конюшенная, д. 19/8<br><br>  
+                    <span class="sort-title"> СОРТИРОВАТЬ: </span>
+                    <a href="" class="type"> ПО ЦЕНЕ </a>
+                    <a href="" class="type"> ПО ТИПУ </a>
+                    <a href="" class="type"> ПО ФУНКЦИОНАЛУ </a>
 
-тел. +7 (812) 275-75-75 </p>
-    <a href="" class="writetous"> Напишите нам</a>
-    
-  </div>
-  <div class="logo-onmap"><img src="img/logo-cut.png"></div>
-    
-</div>
-</div>
-    
-<footer>
-<div class="container">
-  <div class="social">
-    <a href="" class="socialicon"><span class="icon-vk"></span></a>
-    <a href="" class="socialicon"><span class="icon-facebook"></span></a>
-    <a href="" class="socialicon"><span class="icon-twitter"></span></a>
-  </div>
-  <div class="footerpromo">
-    <strong class="footerpromo-call"> Давайте дружить, это выгодно! </strong> 
-    <p class="footerpromo-description"> Скидка 10% для друзей из социальных сетей. </p>
-  </div>
-</div>
+                    <div class="sort-icons">
+                        <a href="" class="icon-down-dir"></a>
+                        <a href="" class="icon-up-dir"></a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i>
+                        </div>
+                        <div class="portfolio-item-img"><img src="img/item1.jpg" width="240" height="240" alt="Пример магазина первый">
+                        </div>
+                        <div class="portfolio-item-description pid1"></div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i>
+                        </div>
+                        <div class="portfolio-item-img"><img src="img/item2.jpg" width="240" height="240" alt="Пример магазина второй">
+                        </div>
+                        <div class="portfolio-item-description pid2"></div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i>
+                        </div>
+                        <div class="portfolio-item-img"><img src="img/item3.jpg" width="240" height="240" alt="Пример магазина третий">
+                        </div>
+                        <div class="portfolio-item-description pid3"></div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i>
+                        </div>
+                        <div class="portfolio-item-img"><img src="img/item4.jpg" width="240" height="240" alt="Пример магазина четвертый">
+                        </div>
+                        <div class="portfolio-item-description pid4"></div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i>
+                        </div>
+                        <div class="portfolio-item-img"><img src="img/item5.jpg" width="240" height="240" alt="Пример магазина пятый">
+                        </div>
+                        <div class="portfolio-item-description pid5"></div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-bordertop"><i class="white-point"></i><i class="white-point"></i><i class="white-point"></i>
+                        </div>
+                        <div class="portfolio-item-img"><img src="img/item6.jpg" width="240" height="240" alt="Пример магазина шестой">
+                        </div>
+                        <div class="portfolio-item-description pid6"></div>
+                    </div>
+                </div>
+                <div class="page-number">
+                    <a href="" class="page-point current"> 1 </a>
+                    <a href="" class="page-point"> 2 </a>
+                    <a href="" class="page-point"> 3 </a>
+                    <a href="" class="page-next"> СЛЕДУЮЩАЯ </a>
+                </div>
+            </div>
 
 
-      
-</footer>
-    
 
-    
-    
+        </div>
+    </div>
+
+
+
+
+    <div class="map">
+        <div class="container">
+            <div class="companyinfo">
+                <h2> NЁRDS DESIGN STUDIO </h2>
+                <p> 191186, Санкт-Петербург,
+                    <br> ул. Б. Конюшенная, д. 19/8
+                    <br>
+                    <br> тел. +7 (812) 275-75-75 </p>
+                <a href="" class="writetous"> Напишите нам</a>
+
+            </div>
+            <div class="logo-onmap"><img src="img/logo-cut.png" alt="Отметка на карте">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="" class="socialicon"><span class="icon-vk"></span></a>
+                <a href="" class="socialicon"><span class="icon-facebook"></span></a>
+                <a href="" class="socialicon"><span class="icon-twitter"></span></a>
+            </div>
+            <div class="footerpromo">
+                <strong class="footerpromo-call"> Давайте дружить, это выгодно! </strong>
+                <p class="footerpromo-description"> Скидка 10% для друзей из социальных сетей. </p>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+
+
 </body>
+
 </html>
