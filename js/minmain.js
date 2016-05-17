@@ -1,0 +1,1 @@
+var link=document.querySelector(".writetous"),popup=document.querySelector(".pop-up"),close=document.querySelector(".close"),namex=document.querySelector(".name");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("pop-up-show")}),close.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("pop-up-show")});
